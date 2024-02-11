@@ -33,21 +33,33 @@ const IndexPage = () => {
         Come back later for more features! (gps tracking, links to david's trail
         vlogs, milestones, etc.)
       </p>
+
       <br />
       <br />
       <br />
-      <div className="flex flex-col">
-        <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">
-          Time Remaining Till Start
-        </h2>
-        <CountdownTimer tillDate={new Date(Date.parse(startDate))} />
-      </div>
+
+      <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">
+        Time Remaining Till Start
+      </h2>
+      <CountdownTimer tillDate={new Date(Date.parse(startDate))} />
+
+      <br />
+      <br />
+      <br />
+
+      <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">Map</h2>
+      <iframe
+        src="https://share.garmin.com/XTCCE"
+        frameborder="0"
+        marginwidth="0"
+        marginheight="0"
+        width="810"
+        height="760"
+      ></iframe>
+
       {/* TODO: Uncomment after start */}
       {/* <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">Progress</h2>
       <TrackerBar percentComplete={percentComplete} /> */}
-      <br />
-      <br />
-      <br />
     </main>
   );
 };

@@ -47,15 +47,19 @@ const IndexPage = () => {
       <br />
       <br />
 
-      <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">Map</h2>
-      <iframe
-        src="https://share.garmin.com/XTCCE"
-        frameborder="0"
-        marginwidth="0"
-        marginheight="0"
-        width="810"
-        height="760"
-      ></iframe>
+      <div class="flex flex-col">
+        <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">Map</h2>
+        <div className="flex justify-center">
+          <iframe
+            src="https://share.garmin.com/XTCCE"
+            frameborder="0"
+            marginwidth="0"
+            marginheight="0"
+            width="80%"
+            height="800"
+          ></iframe>
+        </div>
+      </div>
 
       {/* TODO: Uncomment after start */}
       {/* <h2 className="text-[2.5rem] mt-[2rem] mb-[1rem] font-bold">Progress</h2>
